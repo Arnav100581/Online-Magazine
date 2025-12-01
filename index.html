@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Magazine</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f2ff;
+    color: #333333;
+  }
+  header {
+    background: linear-gradient(90deg, #5a00b8, #c400ff);
+    padding: 30px;
+    text-align: center;
+    color: white;
+  }
+  nav {
+    background: #2d004d;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .featured {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+  }
+  .featured img {
+    width: 50%;
+    border-radius: 10px;
+  }
+  .featured .text {
+    width: 50%;
+  }
+  .section {
+    padding: 30px;
+  }
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .article {
+    background: rgba(255, 255, 255, 0.856);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .article img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .subscribe {
+    background: #b80081;
+    color: white;
+    text-align: center;
+    padding: 40px;
+  }
+  .subscribe input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+  }
+  .subscribe button {
+    padding: 12px 20px;
+    border: none;
+    background: #b7ff00;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Global U Magazine</h1>
+  <p>Your Daily Dose of News & Inspiration</p>
+</header>
+
+<nav>
+  <a href="#">World</a>
+  <a href="#">Technology</a>
+  <a href="#">Lifestyle</a>
+  <a href="#">Travel</a>
+  <a href="#">Sports</a>
+</nav>
+
+<section class="featured">
+  <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546" alt="Featured Article">
+  <div class="text">
+    <h2>Featured Story: The Future of Global Technology</h2>
+    <p>Technology continues to evolve at an unprecedented rate, reshaping industries and transforming 
+        daily life. Here's a deep dive into what's coming next.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Latest Articles</h2>
+  <div class="articles">
+
+    <div class="article">
+      <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e" alt="Lifestyle">
+      <h3>10 Habits for a Healthier Lifestyle</h3>
+      <p>Learn small daily changes that lead to long-term transformation.</p>
+    </div>
+
+    <div class="article">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Technology">
+      <h3>AI in 2025: What to Expect</h3>
+      <p>Artificial intelligence is growing rapidly—here's what experts predict.</p>
+    </div>
+
+    <div class="article">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Travel">
+      <h3>Top 5 Tropical Destinations</h3>
+      <p>Dreaming of your next vacation? Check out these stunning locations.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="subscribe">
+  <h2>Subscribe to Our Magazine</h2>
+  <p>Get weekly updates delivered straight to your inbox.</p>
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
+</section>
+
+</body>
+</html>
